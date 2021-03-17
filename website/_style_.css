@@ -1,0 +1,49 @@
+ @media screen and (min-width: 800px) {
+    #app {
+        display: grid;
+        grid-auto-rows: minmax(10px, auto);
+        grid-template-columns: 1fr 1fr;
+        height: 100vh;
+        /*background: #f23557;
+        color: #f0d43a;*/
+        justify-content: center;
+        grid-gap: 1em;
+        font-size: 20px;
+        font-family: 'Oswald', sans-serif;
+    }
+    .holder {
+        grid-row: auto/auto;
+        grid-column: 1/2;
+    }
+    
+    .entry {
+        background: rgba(59, 74, 107, .4);
+        grid-row: 3/auto;
+        grid-column: 2/3;
+    }
+}
+
+
+@media screen and (min-width: 100px) {
+    #app {
+        display: grid;
+        grid-auto-rows: minmax(10px, auto);
+        grid-template-columns: 1fr;
+        height: 100vh;
+        /*background: #f23557;
+        color: #f0d43a;*/
+        justify-content: center;
+        grid-gap: 1em;
+        font-size: 20px;
+        font-family: 'Oswald', sans-serif;
+    }
+    .holder {
+        grid-row: auto/auto;
+        grid-column: 1/2;
+    }
+    .entry {
+        background: rgba(59, 74, 107, .4);
+        grid-row: auto/auto;
+        grid-column: 1/2;
+    }
+} 
